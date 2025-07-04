@@ -1,0 +1,413 @@
+.header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header h1 {
+    color: #333;
+    font-size: 2rem;
+    margin: 0;
+}
+.header nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.header nav a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+.header nav a:hover {
+    color: #0056b3;
+}
+.header nav a:visited {
+    color: #0056b3;
+}
+.header nav a:active {
+    color: #004085;
+}
+.header nav a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.swiper-slide:hover {
+    transform: scale(1.05);
+}
+.swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0f0f0f;
+}
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.game-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.game-container:hover {
+    transform: scale(1.02);
+}
+.game-container h2 {
+    color: #444;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+.game-container p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.game-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.game-container button:hover {
+    background-color: #0056b3;
+}
+.game-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.game-container .card {
+    width: 100%;
+    max-width: 300px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.game-container .card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.game-container .card p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.game-container .card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.game-container .scoreboard {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-top: 10px;
+}
+.game-container .error {
+    color: #dc3545;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.game-container .success {
+    color: #28a745;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.game-container .loading {
+    color: #007bff;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.game-container .game-over {
+    color: #dc3545;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+.game-container .game-over button {
+    margin-top: 10px;
+    background-color: #dc3545;
+}
+.game-container .game-over button:hover {
+    background-color: #c82333;
+}
+.game-container .game-over button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.game-container .game-over h2 {
+    margin-bottom: 10px;
+}
+.game-container .game-over p {
+    margin-bottom: 20px;
+}
+.game-container .game-over .scoreboard .error .success .loading {
+    margin-top: 0;
+}
+.game-container .settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.game-container .settings label {
+    color: #444;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.game-container .settings input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.game-container .settings input[type="number"]::placeholder {
+    color: #999;
+}
+.game-container .settings input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.game-container .settings input[type="number"]:hover {
+    border-color: #0056b3;
+}
+.game-container .settings input[type="number"]:active {
+    border-color: #0056b3;
+}
+.game-container .settings input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.game-container .settings input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.game-container .settings input[type="text"]::placeholder {
+    color: #999;
+}
+.game-container .settings input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.game-container .settings input[type="text"]:hover {
+    border-color: #0056b3;
+}
+.game-container .settings input[type="text"]:active {
+    border-color: #0056b3;
+}
+.game-container .settings button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.game-container .settings button:hover {
+    background-color: #218838;
+}
+.game-container .settings button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.game-container .help {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 600px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.game-container .help:hover {
+    background-color: #e9ecef;
+}
+.game-container .help h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.game-container .help p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.game-container .help ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+.game-container .help ul li {
+    margin-bottom: 5px;
+}
+.game-container .help ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+.game-container .help ul li a:hover {
+    text-decoration: underline;
+}
+.game-container .help ul li a:visited {
+    color: #0056b3;
+}
+.game-container .help ul li a:active {
+    color: #004085;
+}
+.game-container .help ul li a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+.game-container .help .close-help {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+.game-container .about {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 600px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.game-container .about h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.game-container .about p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.game-container .about ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+.game-container .about ul li {
+    margin-bottom: 5px;
+}
+.game-container .about ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+.game-container .about ul li a:hover {
+    text-decoration: underline;
+}
+.game-container .about ul li a:visited {
+    color: #0056b3;
+}
+.game-container .about ul li a:active {
+    color: #004085;
+}
+.game-container .about ul li a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+.game-container .about .close-about {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+.game-container .about .close-about:hover {
+    color: #007bff;
+}
+.game-container .about .close-about:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+.game-container .about .close-about:active {
+    color: #0056b3;
+}
+.game-container .about .close-about:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+.game-container .about .close-about:disabled:hover {
+    color: #ccc;
+}
+.game-container .about .close-about:disabled:focus {
+    outline: none;
+    box-shadow: none;
+}
+.game-container .about .close-about:disabled:active {
+    color: #ccc;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory-Card-Game</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <h1>Memory Card Game</h1>
+            <p>Test your memory skills by matching pairs of cards!</p>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#how-to-play">How to Play</a></li>
+                    <li><a href="#scoreboard">Scoreboard</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#help">Help</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#privacy-policy">Privacy Policy</a></li>
+                </ul>
+        </header>
+        <div class="swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/slide1.jpg" alt="Slide 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide2.jpg" alt="Slide 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide3.jpg" alt="Slide 3">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-navigation">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Memory Card</h1>
+            <div class="game-container">
+                <div class="card" data="1">
+                    <img src="images/card1.png" alt="Card 1">
+                </div>
+                <div class="card" data="2">
+                    <img src="images/card2.png" alt="Card 2">
+                </div>
+                <div class="card" data="3">
+                    <img src="images/card3.png" alt="Card 3">
+                </div>
+                <h2>How to play</h2>
+            </div>
+            <p>Match all the pairs and test your memory skills!</p>
+            <p>Click on a card to flip it. Match two cards to remove them.</p>
+            <p>You’ve made 6 moves so far.</p>
+            <p>Pairs matched: 4 of 8</p>
+            <p>Time taken: 00:30</p>
+        </div>
+        <div class="footer">
+            <p>Made with ❤️ by <a href="">John Doe</a></p>
+            <p>Check out the source code on <a href="">GitHub</a></p>
+            <p>Follow us on <a href="">Twitter</a> and <a href="">Instagram</a></p>
+            <p>Join our community on <a href="">Discord</a></p>
+            <p>Create your named by <a href=""></p>
+            <p>© 2023 Memory Card Game</p>
+        </div>
+        <div class="modal">
+            <div class="modal-content">
+                <h2>Congratulations!</h2>
+                <p>You matched all pairs in 6 moves and 00:30 seconds.</p>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+        <div class="overlay">
+            <div class="overlay-content">
+                <h2>Game Over</h2>
+                <p>Would you like to play again?</p>
+                <button class="play-again">Play Again</button>
+                <button class="exit-game">Exit Game</button>
+            </div>
+        </div>
+        <div class="scoreboard">
+            <h2>Scoreboard</h2>
+            <ul>
+                <li>Player 1: 100 points</li>
+                <li>Player 2: 80 points</li>
+                <li>Player 3: 60 points</li>
+            </ul>
+            <button class="close-scoreboard">Close</button>
+        </div>
+        <div class="error">
+            <h2>Error</h2>
+            <p>Something went wrong. Please try again later.</p>
+            <button class="close-error">Close</button>
+        </div>
+        <div class="success">
+            <h2>Success</h2>
+            <p>Your action was successful!</p>
+            <button class="close-success">Close</button>
+        </div>
+        <div class="loading">
+            <h2>Loading...</h2>
+            <p>Please wait while we load the game.</p>
+            <div class="spinner"></div>
+            <button class="close-loading">Close</button>
+        </div>
+        <div class="game-over">
+            <h2>Game Over</h2>
+            <p>You've run out of moves. Better luck next time!</p>
+            <button class="restart-game">Restart Game</button>
+            <button class="exit-game">Exit Game</button>
+        </div>
+        <div class="settings">
+            <h2>Settings</h2>
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <label for="player-name">Player Name:</label>
+            <input type="text" id="player-name" placeholder="Enter your name">
+            <label for="moves">Max Moves:</label>
+            <input type="number" id="moves" placeholder="Max Moves" min="1" max="20">
+            <label for="time">Max Time:</label>
+            <input type="number" id="time" placeholder="Max Time (seconds)" min="1" max="300">
+            <label for="theme">Theme:</label>
+            <select id="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="colorful">Colorful</option>
+                <option value="minimal">Minimal</option>
+            </select>
+            <button class="save-settings">Save Settings</button>
+            <button class="close-settings">Close</button>
+            <p>Change the game settings to customize your experience.</p>
+        </div>
+        <div class="help">
+            <h2>Help</h2>
+            <p>Need help? Here are some tips:</p>
+            <ul>
+                <li>Click on a card to flip it.</li>
+                <li>Try to remember the positions of the cards.</li>
+                <li>Match pairs to remove them from the board.</li>
+                <li>If you get stuck, you can shuffle the cards.</li>
+                <li>Use the settings to adjust the difficulty and other options.</li>
+            </ul>
+            <p>Need assistance? Check out our <a href="">FAQ</a> or contact support.</p>
+            <button class="close-help">Close</button>
+        </div>
+        <div class="about">
+            <h2>About</h2>
+            <p>Memory Card Game is a fun and engaging way to test your memory skills.</p>
+            <p>Developed by <a href="">John Doe</a> and the team.</p>
+            <p>For more information, visit our <a href="">website</a>.</p>
+            <p>Follow us on <a href="">Twitter</a> and <a href="">Instagram</a>.</p>
+            <p>Join our community on <a href="">Discord</a>.</p>
+            <p>This game is designed to test your memory skills. Match pairs of cards to win!</p>
+            <p>Version 1.0.0</p>
+            <p>© 2023 Memory Card Game</p>
+            <p>For more information, visit our <a href="">website</a>.</p>
+            <p>Follow us on <a href="">Twitter</a> and <a href="">Instagram</a>.</p>
+            <p>Join our community on <a href="">Discord</a>.</p>
+            <p>For support, contact us at <a href="mailto:">
+            <ul>
+                <li>Email:</li>
+                <li>ldat7174@gmail.com</li>
+                <li>Phone:</li>
+                <li>123-456-7890</li>
+                <li>Address:</li>
+                <li>123 Memory Lane, Memory City, MC 12345</li>
+            </ul>
+            <button class="close-about">Close</button>
+        </div>
+        <div class="privacy-policy">
+            <h2>Privacy Policy</h2>
+            <p>Your privacy is important to us. We do not collect any personal data.</p>
+            <p>For more information, read our <a href="">Privacy Policy</a>.</p>
+            <button class="close-privacy-policy">Close</button>
+        </div>
+        <script src="game.js"></script>
+    </body>
+</html>
