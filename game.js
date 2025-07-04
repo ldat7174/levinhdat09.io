@@ -14,18 +14,26 @@ new container ('container', {
         nextEL: '.container-button-next',
         prevEL: '.container-button-prev',
     },
+    scrollbar: {
+        el: '.container-scrollbar',
+        draggable: true,
+    },
     breakpoints: {
-        640: {
+        320: {
             slidesPerView: 1,
             spaceBetween: 10,
         },
-        768: {
+        640: {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        1024: {
+        768: {
             slidesPerView: 3,
             spaceBetween: 30,
         },
-    }
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+        },
+    },
 })
