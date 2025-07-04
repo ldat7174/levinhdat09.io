@@ -1,5 +1,5 @@
-new swiper ('swiper-container', {
-    el: '.swiper-container',
+new container ('container', {
+    el: '.container',
     direction: 'horitonzal',
     loop: true,
     autoplay: {
@@ -7,11 +7,25 @@ new swiper ('swiper-container', {
         disableOnInteraction: false,
     },
     pagination: {
-        el: '.swiper-pagination',
+        el: '.container-pagination',
         clickable: true,
     },
     navigation: {
-        nextEL: '.swiper-button-next',
-        prevEL: '.swiper-button-prev',
+        nextEL: '.container-button-next',
+        prevEL: '.container-button-prev',
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
     }
 })
