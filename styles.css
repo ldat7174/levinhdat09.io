@@ -41,30 +41,6 @@ body {
     background-color: #f0f0f0;
     color: #333;
 }
-.swiper-container {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-.swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-.swiper-slide:hover {
-    transform: scale(1.05);
-}
-.swiper-slide img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -147,6 +123,52 @@ h1 {
     max-width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+.game-container .modal .modal-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.game-container .modal .modal-content .modal-body {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.game-container .modal .modal-content .modal-body h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+.game-container .modal .modal-content .modal-body p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.game-container .modal .modal-content .modal-body button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 .game-container .scoreboard {
     font-size: 1.5rem;
